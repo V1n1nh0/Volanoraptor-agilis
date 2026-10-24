@@ -1,128 +1,672 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volanoraptor agilis</title>
+  <title>Volanoraptor agilis - Enciclopédia</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #222;
+      background-color: #f8f9fa;
+      color: #202122;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: #ffffff;
+      border-bottom: 1px solid #a7d7f9;
+      padding: 16px 24px;
     }
-    section {
-      padding: 20px;
-      margin: 10px;
-      background: white;
-      border-radius: 10px;
+
+    header h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-weight: normal;
     }
+
+    header p {
+      margin: 2px 0 0;
+      color: #54595d;
+      font-size: 13px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px;
+      background-color: #ffffff;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+    }
+
+    main > h1 {
+      font-size: 32px;
+      border-bottom: 1px solid #a2a9b1;
+      margin-top: 0;
+      padding-bottom: 8px;
+    }
+
     h2 {
-      color: #2c3e50;
+      font-size: 24px;
+      border-bottom: 1px solid #a2a9b1;
+      margin-top: 32px;
+      padding-bottom: 4px;
+    }
+
+    h3 {
+      font-size: 19px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      font-size: 16px;
+    }
+
+    .infobox {
+      float: right;
+      width: 320px;
+      max-width: 100%;
+      margin: 0 0 20px 24px;
+      padding: 8px;
+      border: 1px solid #a2a9b1;
+      background-color: #f8f9fa;
+      font-size: 14px;
+    }
+
+    .infobox-title {
+      text-align: center;
+      font-size: 19px;
+      font-weight: bold;
+      padding: 6px;
+      background-color: #eaecf0;
+    }
+
+    .infobox img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 8px auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 12px;
+      color: #54595d;
+      margin-bottom: 10px;
+    }
+
+    .infobox table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .infobox th,
+    .infobox td {
+      padding: 5px;
+      text-align: left;
+      vertical-align: top;
+      border-top: 1px solid #eaecf0;
+    }
+
+    .infobox th {
+      width: 42%;
+    }
+
+    .toc {
+      display: table;
+      min-width: 260px;
+      max-width: 100%;
+      padding: 12px 24px;
+      margin: 24px 0;
+      border: 1px solid #a2a9b1;
+      background-color: #f8f9fa;
+    }
+
+    .toc-title {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .toc ol ol {
+      margin-top: 2px;
+    }
+
+    .data-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0;
+    }
+
+    .data-table th,
+    .data-table td {
+      border: 1px solid #a2a9b1;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background-color: #eaecf0;
+    }
+
+    .note {
+      padding: 10px 14px;
+      border-left: 4px solid #72777d;
+      background-color: #f8f9fa;
+      margin: 16px 0;
+    }
+
+    footer {
+      border-top: 1px solid #a2a9b1;
+      margin-top: 40px;
+      padding-top: 16px;
+      font-size: 13px;
+      color: #54595d;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @media (max-width: 700px) {
+      main {
+        padding: 16px;
+      }
+
+      main > h1 {
+        font-size: 27px;
+      }
+
+      .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+      }
+
+      .toc {
+        width: 100%;
+      }
+
+      .data-table {
+        font-size: 14px;
+      }
     }
   </style>
+
 </head>
+
 <body>
 
 <header>
-  <h1>Volanoraptor agilis</h1>
-  <p>Enciclopédia de um dinossauro fictício</p>
+  <h1>Enciclopédia dos Dinossauros</h1>
+  <p>Um artigo sobre o fictício Volanoraptor agilis</p>
 </header>
 
-<section>
-  <h2>Descrição</h2>
-  <p>O Volanoraptor é um dinossauro fascinante e único, com características e habilidades que o tornam um predador eficaz e adaptável.</p>
-</section>
+<main>
 
-<section>
-  <h2>Aparência Física</h2>
-  <ul>
-    <li>Comprimento: 1,2m</li>
-    <li>Altura: 40-50 cm</li>
-    <li>Peso: 2-4kg</li>
-    <li>Músculos peitorais fortes para voar por curtas distâncias</li>
-    <li>Asas grandes com penas assimétricas e ganchos(bárbulas)</li>
-    <li>Garras curvas e afiadas para escalar e atacar</li>
-    <li>Pernas relativamente musculosas</li>
-    <li>Asas traseiras para melhor sustentação no ar</li>
-    <li>Grande cauda com penas em forma de leque para controle de voo</li>
-  </ul>
-</section>
+  <h1><i>Volanoraptor agilis</i></h1>
 
-<section>
-  <h2>Habilidades</h2>
-  <ul>
-    <li>Velocidade terrestre: 15 km/h</li>
-    <li>Velocidade de escalada: 5 km/h</li>
-    <li>Velocidade de planeio: 40 km/h</li>
-    <li>Velocidade de voo: 55 km/h</li>
-    <li>Capaz de voar, planar e escalar</li>
-    <li>Garras afiadas para ataque e defesa</li>
-  </ul>
-</section>
+  <div class="infobox">
 
-<section>
-  <h2>Comportamento</h2>
-  <ul>
-    <li>Geralmente solitário, mas pode caçar em grupo</li>
-    <li>Caça por emboscada e curtas perseguições no ar e nas árvores</li>
-    <li>Pode se aproximar furtivamente de presas no chão</li>
-    <li>Possui sons específicos para comunicação</li>
-    <li>Cuida bem dos filhotes (fêmea no ninho, macho traz comida)</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Reprodução</h2>
-  <ul>
-    <li>Se reproduz na primavera</li>
-    <li>De 4 a 6 filhotes por ninhada</li>
-    <li>Os pais ensinam os filhotes a caçar</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Habitat</h2>
-  <ul>
-    <li>Floresta de Liaoning, China</li>
-    <li>Clima temperado a subtropical</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Dieta</h2>
-  <ul>
-    <li>Pequenos répteis</li>
-    <li>Pequenos mamíferos</li>
-    <li>Aves</li>
-    <li>Peixes</li>
-    <li>Filhotes ou dinossauros menores</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Expectativa de Vida</h2>
-  <p>Até 10 anos</p>
-</section>
-
-<section>
-  <h2>Inimigos Naturais</h2>
-  <ul>
-    <li>Terópodes de médio a grande porte, no solo</li>
-    <li>Raramente caçado devido à sua agilidade</li>
-  </ul>
-</section>
-
-<div style="text-align:center;">
-  <img src="20260324_180006.jpg" style="max-width:100%;">
-  <p><i>Reconstrução artística do Volanoraptor</i></p>
+```
+<div class="infobox-title">
+  <i>Volanoraptor agilis</i>
 </div>
+
+<img
+  src="20260324_180006.jpg"
+  alt="Ilustração do Volanoraptor agilis"
+>
+
+<div class="caption">
+  Ilustração de <i>Volanoraptor agilis</i>.
+</div>
+
+<table>
+  <tr>
+    <th>Época</th>
+    <td>Cretáceo Inferior, há aproximadamente 122 milhões de anos</td>
+  </tr>
+  <tr>
+    <th>Comprimento</th>
+    <td>1,2 m</td>
+  </tr>
+  <tr>
+    <th>Altura</th>
+    <td>40–50 cm</td>
+  </tr>
+  <tr>
+    <th>Massa</th>
+    <td>2–4 kg</td>
+  </tr>
+  <tr>
+    <th>Locomoção</th>
+    <td>Bipedalismo, escalada, planeio e voo</td>
+  </tr>
+  <tr>
+    <th>Velocidade em terra</th>
+    <td>15 km/h</td>
+  </tr>
+  <tr>
+    <th>Velocidade ao escalar</th>
+    <td>5 km/h</td>
+  </tr>
+  <tr>
+    <th>Velocidade em planeio</th>
+    <td>40 km/h</td>
+  </tr>
+  <tr>
+    <th>Velocidade em voo</th>
+    <td>55 km/h</td>
+  </tr>
+  <tr>
+    <th>Habitat</th>
+    <td>Arborícola</td>
+  </tr>
+  <tr>
+    <th>Nidificação</th>
+    <td>Galhos grossos ou cavidades em árvores</td>
+  </tr>
+</table>
+
+<p><b>Classificação proposta</b></p>
+<p>
+  Dinossauro terópode fictício, inspirado nos
+  dromeossaurídeos e especialmente no
+  <i>Sinornithosaurus</i>.
+</p>
+```
+
+  </div>
+
+  <p class="intro">
+    O <b><i>Volanoraptor agilis</i></b> é uma espécie fictícia de
+    dinossauro terópode inspirada no <i>Sinornithosaurus</i> e em
+    outros pequenos dromeossaurídeos. Viveu há aproximadamente
+    <b>122 milhões de anos</b>, durante o Cretáceo Inferior.
+    Pode ser descrito, de maneira simplificada, como um
+    <i>Sinornithosaurus</i> com capacidades de voo aprimoradas.
+  </p>
+
+  <p class="intro">
+    Com cerca de 1,2 metro de comprimento, o animal apresenta
+    grandes asas emplumadas, penas assimétricas adaptadas ao voo
+    e uma cauda com um leque de penas desenvolvido. É principalmente
+    arborícola, deslocando-se entre árvores por meio de escalada,
+    planeio e voos curtos. Também nidifica em galhos grossos ou
+    em cavidades de árvores.
+  </p>
+
+  <div class="note">
+    <b>Nota:</b> o <i>Volanoraptor agilis</i> é fictício.
+    As informações deste artigo descrevem a espécie imaginada,
+    não um dinossauro reconhecido pela paleontologia.
+  </div>
+
+  <nav class="toc">
+    <div class="toc-title">Índice</div>
+    <ol>
+      <li><a href="#descricao">Descrição</a></li>
+      <li><a href="#classificacao">Classificação</a></li>
+      <li><a href="#anatomia">Anatomia e aparência</a></li>
+      <li><a href="#locomocao">Locomoção</a></li>
+      <li><a href="#comportamento">Comportamento</a></li>
+      <li><a href="#alimentacao">Alimentação</a></li>
+      <li><a href="#habitat">Habitat</a></li>
+      <li><a href="#reproducao">Reprodução e nidificação</a></li>
+      <li><a href="#dados">Dados gerais</a></li>
+    </ol>
+  </nav>
+
+  <section id="descricao">
+    <h2>Descrição</h2>
+
+```
+<p>
+  O <i>Volanoraptor agilis</i> é imaginado como um pequeno
+  terópode emplumado, ágil e adaptado à vida nas árvores.
+  Sua aparência geral lembra a de um <i>Sinornithosaurus</i>,
+  mas apresenta adaptações adicionais que lhe permitem
+  planar e realizar voos curtos.
+</p>
+
+<p>
+  A combinação de membros anteriores alongados, grandes asas,
+  penas de voo assimétricas e uma cauda emplumada torna o
+  animal especialmente adaptado à movimentação pelo ambiente
+  arbóreo.
+</p>
+
+<p>
+  A espécie teria vivido há aproximadamente 122 milhões de
+  anos, no Cretáceo Inferior, época em que também existiram
+  dinossauros emplumados como o <i>Sinornithosaurus</i>.
+</p>
+```
+
+  </section>
+
+  <section id="classificacao">
+    <h2>Classificação</h2>
+
+```
+<p>
+  A classificação abaixo é uma proposta para a espécie
+  fictícia, baseada nas relações evolutivas imaginadas para
+  ela. Não representa uma classificação científica real.
+</p>
+
+<table class="data-table">
+  <tr>
+    <th>Categoria</th>
+    <th>Classificação proposta</th>
+  </tr>
+  <tr>
+    <td>Domínio</td>
+    <td>Eukaryota</td>
+  </tr>
+  <tr>
+    <td>Reino</td>
+    <td>Animalia</td>
+  </tr>
+  <tr>
+    <td>Filo</td>
+    <td>Chordata</td>
+  </tr>
+  <tr>
+    <td>Clado</td>
+    <td>Dinosauria</td>
+  </tr>
+  <tr>
+    <td>Clado</td>
+    <td>Saurischia</td>
+  </tr>
+  <tr>
+    <td>Clado</td>
+    <td>Theropoda</td>
+  </tr>
+  <tr>
+    <td>Clado</td>
+    <td>Paraves</td>
+  </tr>
+  <tr>
+    <td>Família proposta</td>
+    <td>Dromaeosauridae</td>
+  </tr>
+  <tr>
+    <td>Gênero</td>
+    <td><i>Volanoraptor</i></td>
+  </tr>
+  <tr>
+    <td>Espécie</td>
+    <td><i>Volanoraptor agilis</i></td>
+  </tr>
+</table>
+```
+
+  </section>
+
+  <section id="anatomia">
+    <h2>Anatomia e aparência</h2>
+
+```
+<p>
+  O <i>Volanoraptor</i> possui corpo relativamente leve,
+  membros posteriores adaptados à locomoção terrestre e
+  à escalada, além de membros anteriores modificados em
+  grandes asas emplumadas.
+</p>
+
+<p>
+  Suas penas de voo são assimétricas, uma característica
+  associada à aerodinâmica das penas de aves voadoras.
+  A cauda possui um leque de penas relativamente grande,
+  que contribui para o controle durante o deslocamento aéreo.
+</p>
+
+<p>
+  As asas dianteiras constituem sua principal superfície
+  de voo. As penas dos membros posteriores desempenham
+  um papel auxiliar, sendo menos importantes para o voo
+  do que no <i>Microraptor</i>.
+</p>
+
+<p>
+  Em termos gerais, sua aparência pode ser resumida como
+  a de um <i>Sinornithosaurus</i> com capacidades de voo
+  aprimoradas.
+</p>
+```
+
+  </section>
+
+  <section id="locomocao">
+    <h2>Locomoção</h2>
+
+```
+<p>
+  O animal combina quatro formas principais de locomoção:
+  corrida bípede, escalada, planeio e voo ativo de curta duração.
+  É capaz de se movimentar pelo solo, mas suas adaptações
+  favorecem a vida nas árvores.
+</p>
+
+<table class="data-table">
+  <tr>
+    <th>Forma de locomoção</th>
+    <th>Velocidade estimada</th>
+  </tr>
+  <tr>
+    <td>Corrida</td>
+    <td>15 km/h</td>
+  </tr>
+  <tr>
+    <td>Escalada</td>
+    <td>5 km/h</td>
+  </tr>
+  <tr>
+    <td>Planeio</td>
+    <td>40 km/h</td>
+  </tr>
+  <tr>
+    <td>Voo ativo</td>
+    <td>55 km/h</td>
+  </tr>
+</table>
+
+<h3>Planeio</h3>
+
+<p>
+  O planeio é uma forma eficiente de percorrer distâncias
+  entre árvores. Após alcançar um ponto elevado, o
+  <i>Volanoraptor</i> pode saltar e usar suas asas para
+  controlar a descida e avançar pelo ar.
+</p>
+
+<h3>Voo ativo</h3>
+
+<p>
+  Diferentemente de um animal limitado ao planeio, o
+  <i>Volanoraptor</i> também é capaz de produzir impulso
+  com movimentos das asas. Seu voo ativo, entretanto,
+  é de curta duração.
+</p>
+```
+
+  </section>
+
+  <section id="comportamento">
+    <h2>Comportamento</h2>
+
+```
+<p>
+  O <i>Volanoraptor agilis</i> é predominantemente arborícola.
+  Pode utilizar galhos para descansar, observar o ambiente,
+  procurar alimento e deslocar-se entre diferentes partes
+  da vegetação.
+</p>
+
+<p>
+  Para percorrer distâncias entre árvores, o planeio pode
+  ser mais rápido e eficiente do que atravessar o terreno
+  correndo. A capacidade de realizar voos curtos oferece
+  possibilidades adicionais de deslocamento.
+</p>
+
+<p>
+  Detalhes sobre sua organização social, territorialidade
+  e hábitos diários não estão definidos.
+</p>
+```
+
+  </section>
+
+  <section id="alimentacao">
+    <h2>Alimentação</h2>
+
+```
+<p>
+  A dieta exata do <i>Volanoraptor agilis</i> ainda não foi
+  estabelecida dentro da descrição da espécie fictícia.
+  Sua alimentação pode ser definida de acordo com o
+  universo em que ela existe.
+</p>
+```
+
+  </section>
+
+  <section id="habitat">
+    <h2>Habitat</h2>
+
+```
+<p>
+  O ambiente mais adequado para o <i>Volanoraptor</i>
+  é uma região arborizada, com árvores que ofereçam
+  galhos resistentes, locais para escalada e espaço
+  suficiente para saltos, planeios e voos curtos.
+</p>
+
+<p>
+  A espécie é considerada arborícola. A região geográfica
+  exata em que viveu não está definida.
+</p>
+```
+
+  </section>
+
+  <section id="reproducao">
+    <h2>Reprodução e nidificação</h2>
+
+```
+<p>
+  O <i>Volanoraptor agilis</i> nidifica em ambientes arbóreos.
+  Seus ninhos podem ser construídos sobre
+  <b>galhos grossos de árvores</b> ou dentro de
+  <b>cavidades nos troncos</b>.
+</p>
+
+<p>
+  Os galhos grossos oferecem uma plataforma elevada e
+  resistente, enquanto as cavidades proporcionam um espaço
+  protegido dentro da árvore. Ambos os locais combinam
+  com o estilo de vida arborícola da espécie.
+</p>
+
+<p>
+  A quantidade de ovos, a duração da incubação e os cuidados
+  parentais não estão definidos.
+</p>
+```
+
+  </section>
+
+  <section id="dados">
+    <h2>Dados gerais</h2>
+
+```
+<table class="data-table">
+  <tr>
+    <th>Característica</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Nome científico</td>
+    <td><i>Volanoraptor agilis</i></td>
+  </tr>
+  <tr>
+    <td>Época</td>
+    <td>Há aproximadamente 122 milhões de anos</td>
+  </tr>
+  <tr>
+    <td>Período geológico</td>
+    <td>Cretáceo Inferior</td>
+  </tr>
+  <tr>
+    <td>Comprimento</td>
+    <td>1,2 m</td>
+  </tr>
+  <tr>
+    <td>Altura</td>
+    <td>40–50 cm</td>
+  </tr>
+  <tr>
+    <td>Massa</td>
+    <td>2–4 kg</td>
+  </tr>
+  <tr>
+    <td>Estilo de vida</td>
+    <td>Predominantemente arborícola</td>
+  </tr>
+  <tr>
+    <td>Principal adaptação</td>
+    <td>Voo aprimorado em relação ao modelo inspirado no <i>Sinornithosaurus</i></td>
+  </tr>
+  <tr>
+    <td>Locais de nidificação</td>
+    <td>Galhos grossos ou cavidades em árvores</td>
+  </tr>
+</table>
+```
+
+  </section>
+
+  <div class="clear"></div>
+
+  <footer>
+    <p>
+      Este artigo descreve uma espécie fictícia criada para
+      fins criativos. As características, velocidades e
+      hábitos apresentados correspondem ao universo imaginado
+      para o <i>Volanoraptor agilis</i>.
+    </p>
+  </footer>
+
+</main>
 
 </body>
 </html>
